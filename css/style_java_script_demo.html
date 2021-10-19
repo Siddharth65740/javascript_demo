@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Style Java Script Demo</title>
+  <script>
+    document.addEventListener('DOMContentLoaded',function(){
+
+      document.getElementById("colorinput").onchange=function (){
+
+        document.getElementById("heading").style.color=this.value;
+      }
+
+      document.getElementById("colorbackgroundinput").onchange=function (){
+
+        document.getElementById("heading").style.backgroundColor=this.value;
+      }
+    })
+  </script>
+</head>
+<body>
+        <h1 id="heading">Hello</h1>
+        <br>
+        font color:<input type="color" id="colorinput">
+        </br>
+        background color:<input type="color" id="colorbackgroundinput">
+</body>
+</html>
